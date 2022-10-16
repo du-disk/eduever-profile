@@ -1,0 +1,205 @@
+<!-- 
+  @author Dudi Iskandar
+  HTML Web Dasar | Dicoding Submission
+  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduever - Web Dasar | Dicoding Submission</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="boxed">
+      <nav>
+        <div class="wrapper">
+          <div class="brand">
+            <img src="./assets/logo/brand-logo.svg" alt="logo" />
+          </div>
+          <div class="toggle-wrap">
+            <div class="toggle-menu">
+              <img src="./assets/icons/menu.png" alt="humberger-menu" />
+            </div>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a onclick="goToId('content')">Home</a></li>
+              <li><a onclick="goToId('offer-module')">Offer Modules</a></li>
+              <li><a onclick="goToId('features')">Features</a></li>
+              <li><a onclick="goToId('our-team')">Our Teams</a></li>
+              <li>
+                <a
+                  href="https://www.dicoding.com/users/brodud"
+                  target="_blank"
+                  class="btn"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+    <main>
+      <div id="content">
+        <!-- Hero Section -->
+        <section class="flex-container boxed" id="hero-section">
+          <div class="flex-4">
+            <img
+              src="./assets/illustration/ilustration-1.svg"
+              alt="ilustration-phone"
+              class="ilustration-phone"
+            />
+          </div>
+          <div class="flex-8">
+            <h1>Let's make learning easy</h1>
+            <span
+              >A smart application you can control your learning with mobile and
+              web based application, from registration till publish
+              certification or report.</span
+            >
+            <div class="btn-wrap">
+              <a onclick="goToId('content')" class="btn">Get Started</a>
+              <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+          </div>
+        </section>
+        <!-- End Hero Section -->
+        <a onclick="goToId('offer-module')" class="text-center">
+          <img
+            src="./assets/illustration/illustration-2.svg"
+            alt="illustration-2"
+            class=""
+          />
+        </a>
+        <!-- Offer Module Section -->
+        <section class="boxed mt-1" id="offer-module">
+          <h2>Offer Modules</h2>
+          <div class="flex-container overflow-x">
+            <article class="flex-3 module-card text-center">
+              <img
+                src="./assets/illustration/module-certificate.svg"
+                alt="illustration-module-certificate"
+              />
+              <h4>Certificate</h4>
+            </article>
+            <article class="flex-3 module-card text-center">
+              <img
+                src="./assets/illustration/module-lesson.png"
+                alt="illustration-module-lesson"
+              />
+              <h4>Lesson</h4>
+            </article>
+            <article class="flex-3 module-card text-center">
+              <img
+                src="./assets/illustration/module-assignment.svg"
+                alt="illustration-module-assignment"
+              />
+              <h4>Assignment</h4>
+            </article>
+            <article class="flex-3 module-card text-center">
+              <img
+                src="./assets/illustration/module-schedule.svg"
+                alt="illustration-module-schedule"
+              />
+              <h4>Schedule</h4>
+            </article>
+            <article class="flex-3 module-card text-center">
+              <img
+                src="./assets/illustration/module-mobile-app.svg"
+                alt="illustration-module-mobile-app"
+              />
+              <h4>Mobile App</h4>
+            </article>
+          </div>
+        </section>
+        <!-- End Offer Module Section -->
+        <!-- Features Section -->
+        <section class="mt-1 pd-7 bg-wave" id="features">
+          <article class="bg-ilus-2 text-center boxed">
+            <h2>Benefits our application core features</h2>
+            <p>
+              A smart application you can control your learning with mobile and
+              web based application
+            </p>
+          </article>
+          <div class="flex-container boxed overflow-x">
+            <article class="card-rec">
+              <img
+                src="./assets/icons/paperless-icon.png"
+                alt="icon-paperless"
+              />
+              <h3>Go Paperless</h3>
+              <p>
+                Searching for paper documents is time that could be spent on
+                more productive tasks
+              </p>
+            </article>
+            <article class="card-rec">
+              <img src="./assets/icons/flexible-icon.png" alt="icon-flexible" />
+              <h3>Flexible Time</h3>
+              <p>Student wellbeing and sustainable study norms.</p>
+            </article>
+            <article class="card-rec">
+              <img src="./assets/icons/realtime-icon.png" alt="icon-realtime" />
+              <h3>Realtime</h3>
+              <p>Increase productivity, and get test results on the spot</p>
+            </article>
+            <article class="card-rec">
+              <img src="./assets/icons/monitoring.png" alt="icon-monitoring" />
+              <h3>Monitoring</h3>
+              <p>
+                Monitoring and evaluation from improved decision making to
+                planning future
+              </p>
+            </article>
+          </div>
+        </section>
+        <!-- End Features Section -->
+        <!-- Our Teams Section -->
+        <section class="boxed mt-0 text-center mt-0" id="our-team">
+          <h1>Meet With Our Teams</h1>
+          <article>
+            <p class="mt-1">
+              Our team understand the problems faced in the school and how to
+              operationalise a platform to<br />
+              address key challenges
+            </p>
+          </article>
+          <div class="flex-container mt-3">
+            <aside class="card-team">
+              <img src="./assets/avatar/avatar-1.jpeg" alt="team-1" />
+              <h3 class="mb-0">Dudi Iskandar</h3>
+              <p>Founder</p>
+              <p class="mt-1">
+                <q>
+                  Managed his own tenant operation and understands the key
+                  challenges faced
+                </q>
+              </p>
+            </aside>
+          </div>
+        </section>
+        <!-- End Our Teams Section -->
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="boxed flex-container">
+        <div class="flex-6">
+          <img src="./assets/logo/brand-logo-white.svg" alt="logo" />
+        </div>
+        <div class="flex-6">&copy; 2022 Eduever. All Rights Reserved.</div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <button id="scroll-to-top">
+      <img src="./assets/icons/arrow-up.png" alt="arrow-up" />
+    </button>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,296 @@
+/* 
+ @author Dudi Iskandar
+ CSS Web Dasar | Dicoding Submission
+ */
+@font-face {
+  font-family: "Poppins";
+  src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins;
+}
+
+.boxed {
+  width: 70%;
+  margin: 30px auto;
+}
+
+a {
+  text-decoration: none;
+  color: #2a2929;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.brand,
+.brand img {
+  display: inline-block;
+  line-height: 20px;
+  width: 120px;
+}
+.brand img {
+  vertical-align: middle;
+}
+
+.menu {
+  display: inline-block;
+  float: right;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 50px;
+}
+
+.menu ul li a {
+  display: block;
+}
+
+.toggle-wrap {
+  display: inline-block;
+  line-height: 50px;
+}
+
+.toggle-menu {
+  top: 45px;
+}
+
+.toggle-menu > img{
+  width: 30px;
+}
+
+.toggle-wrap {
+  display: none;
+  visibility: hidden;
+}
+
+.btn{
+  background-color: #10ade9;
+  border-radius: 8px;
+  color: #fff;
+  padding: 0 15px;
+  display: inline;
+}
+
+/* Main */
+#hero-section {
+  padding-top: 20px;
+  background: url(../assets/illustration/background-accent-1.svg) no-repeat center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-8 {
+  flex: 8;
+}
+
+.flex-12 {
+  flex: 12;
+}
+
+.btn-wrap {
+  margin: 70px 0;
+}
+
+.btn-wrap :first-child {
+  background-color: #fff;
+  outline: 1px solid #2a2929;
+  color: #2a2929;
+}
+.btn-wrap a {
+  margin-right: 10px;
+  padding: 10px 15px;
+}
+
+.ilustration-phone {
+  width: 95%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.pd-7 {
+  padding-top: 7rem;
+}
+
+h2, h3 {
+  margin-bottom: 1rem;
+}
+
+.module-card {
+  background-color: #f4f4f4;
+  margin-right: 18px;
+  border-radius: 16px;
+  padding: 14px 0;
+}
+
+.bg-wave {
+  background: url(../assets/illustration/wave.svg);
+  width: 100%;
+  height: 726px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  background-color: #2a2929;
+  padding: 5px 0;
+  color: #fff;
+}
+
+.card-rec {
+  text-align: center;
+  padding: 15px;
+  margin-right: 10px;
+  height: 224.85px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+}
+
+.card-rec img {
+  width: 60px;
+  height: 60px;
+}
+
+.card-team {
+  padding: 15px;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  background: #eef0f3;
+  border-radius: 16px;
+}
+
+.card-team img {
+  width: 100px;
+  height: 100px;
+  margin-top: -60px;
+  border-radius: 100%;
+  text-align: center;
+  position: relative;
+  border: 7px solid #fff;
+}
+
+#scroll-to-top{
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  background: #10ade9;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none  ;
+  display: none;
+}
+
+#scroll-to-top.show{
+  display: block;
+}
+
+#scroll-to-top img{
+  width: 25px;
+}
+
+.overflow-x{
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .toggle-wrap {
+    display: block;
+    visibility: visible;
+    float: right;
+  }
+  .menu.show {
+    display: block;
+    position: absolute;
+    top: 89px;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    padding-bottom: 20px;
+    box-shadow: 3px 9px 6px 0px #8585852e;
+  }
+
+  .menu a:hover {
+    color: #fff;
+    background: #353535;
+  }
+
+  .menu ul li {
+    display: block;
+    text-align: center;
+  }
+
+  .flex-container#hero-section img{
+    width:60%;
+  }
+  .flex-container#hero-section{
+    text-align: center;
+    flex-direction: column;
+  }
+
+  section h2{
+    text-align: center;
+  }
+  
+  #offer-module div article {
+    min-width:160px;
+  }
+
+  #features article {
+    padding-top: 30px;
+  }
+  #features > div > article {
+    min-width: 200px;
+  }
+  
+  .boxed {
+    width: 90%;
+    margin: 30px auto;
+  }
+}
